@@ -3,14 +3,14 @@ from matplotlib import pyplot as plt
 cpp = {"quantity": [], "size": [], "time": []}
 py = {"quantity": [], "size": [], "time": []}
 
-with open ('infoCpp.txt') as infoCpp:
+with open ('./info/infoCpp.txt') as infoCpp:
     for line in infoCpp:
       line = list(map(int, line.split()))
       cpp["quantity"] += [line[0]]
       cpp["size"] += [line[1]]
       cpp["time"] += [line[2]]
 
-with open ('infoPy.txt') as infoPy:
+with open ('./info/infoPy.txt') as infoPy:
     for line in infoPy:
       line = list(map(int, line.split()))
       py["quantity"] += [line[0]]
