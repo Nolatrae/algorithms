@@ -25,5 +25,5 @@ clean:
 
 run: all
 	$(TARGET_CPP) > $(OUT_CPP)
-	python $(TARGET_PY) > $(OUT_PY)
+	python $(file_py) > $(OUT_PY)
 	python $(grafic)
