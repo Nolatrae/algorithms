@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -std=c++20 -Wall -pedantic
 SOURCES = main.cpp
-CLASS = NDArray.h
+CLASS = ndarray.h
 
 ifeq ($(OS), Windows_NT)
 	RM = del
@@ -18,4 +18,4 @@ clean:
 	$(RM) $(TARGET)
 
 run: all
-	$(TARGET)
+	./$(TARGET)
