@@ -48,7 +48,7 @@ def search_duplicate(files: list[str], hash: callable) -> list[str]:
 
 if __name__ == '__main__':
     print("---------------------------------")
-    path = "out/"
+    path = "data/"
     files = [path + file for file in os.listdir(path) if file.endswith(".txt")]
     hashes = [hash_CRC, hash_PJW, hash_BUZ, hash]
     for hash in hashes:
