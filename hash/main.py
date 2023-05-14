@@ -57,5 +57,5 @@ if __name__ == '__main__':
         end_time = time.time()
         print(f"function: {hash.__name__}")
         print(f"count of duplicates: {len(duplicates)}")
-        print(f"time: {end_time - start_time} seconds")
+        print(f"time: {round(end_time - start_time, 2)} seconds")
         print("---------------------------------")
